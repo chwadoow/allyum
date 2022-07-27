@@ -14,7 +14,11 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
         </Routes>
+
+        
+       
       </div>
+     
     </>
   )
 }

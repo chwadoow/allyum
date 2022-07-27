@@ -1,3 +1,19 @@
+import React from "react"
+import FirstData from "./FirstData"
+
 export default function Home() {
-    return <h1>Home</h1>
-  }
+   
+  
+   
+ 
+   
+    return (
+<div>
+<div>Home</div>
+
+<FirstData/>
+
+
+
+</div>
+)}
