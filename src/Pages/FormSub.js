@@ -30,9 +30,10 @@ function FormSub({addToRecipes}) {
           );
           setFormData(
             {
-              title:'',
-              content:'',
-              author:''
+          name:'',
+          ingredients:'',
+          link:'',
+          steps:''
             }
           )
           
