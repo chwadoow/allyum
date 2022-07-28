@@ -1,5 +1,6 @@
 import {useState,useEffect} from 'react'
 import SecondData from './SecondData'
+import FormSub from './FormSub'
 function FirstData() {
   const[data,setData]=useState([])
     
@@ -24,10 +25,13 @@ function FirstData() {
   )
    
   )
- console.log(data[0])
+function addToRecipes(res){
+  const newData=[...data,res]
+  setData(newData)
+}
 return (
     <div>
-
+<FormSub addToRecipes={addToRecipes}/>
 {secondBreak}
     </div>
   )
