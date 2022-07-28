@@ -1,23 +1,33 @@
 import React from 'react'
 
+import Card from 'react-bootstrap/Card';
+
 function SecondData({name,ingredients,link,youtube,steps}) {
+ 
+
+
   return (
-    <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-    <img src={link} alt={name} style={{width:'300px;height:300px'}} />
-    </div>
-    <div class="flip-card-back">
-      <h1>{name}</h1>
-      <p>{ingredients}</p>
-      <p>{steps}</p>
-    </div>
-  </div>
-</div>
+    <div>
   
+
+
+ <Card style={{ width: '30rem' }}>
+<Card.Img variant="top" src={link} />
+<Card.Body>
+  <Card.Title>{name}</Card.Title>
+  <Card.Text>
+   {ingredients}
+   {steps}
+  </Card.Text>
+
+</Card.Body>
+</Card> 
+
+</div>
+
+
   )
 }
 
 export default SecondData
-
 
