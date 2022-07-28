@@ -3,7 +3,7 @@ import Pricing from "./Pages/Pricing"
 import Home from "./Pages/Home"
 import About from "./Pages/About"
 import { Route, Routes } from "react-router-dom"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
