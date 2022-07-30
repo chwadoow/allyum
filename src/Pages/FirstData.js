@@ -10,7 +10,7 @@ function FirstData() {
    .then((res)=>setData(res))
 
 
-  },[])
+  },[data])
   const secondBreak =  data.map((element)=>(
     <SecondData
     key={element['id']}
