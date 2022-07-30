@@ -1,5 +1,5 @@
 import Navbar from "./Navbar"
-import Pricing from "./Pages/Pricing"
+import Pricing from "./Pages/Contacts"
 import Home from "./Pages/Home"
 import About from "./Pages/About"
 import { Route, Routes } from "react-router-dom"

@@ -8,10 +8,12 @@ export default function Home() {
  
    
     return (
-<div>
-<div>Home</div>
+<div className="home">
+<h1>Home</h1>
 
+<div className="upper">
 <FirstData/>
+</div>
 
 
 

@@ -1,13 +1,18 @@
-
 * {
- 
+  box-sizing: border-box;
 }
 
 body {
- 
+  background: #DAF7F6;
+  
+
+  
 }
 
-
+.container {
+  margin: 0;
+  text-align: center;
+}
 
 .nav {
   background-color: #333;
@@ -48,11 +53,23 @@ body {
   background-color: #777;
 }
 
+.form{
+  
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  
+  
+}
+.upper{
+  width: 100%;
+}
 
-card{
-  display:flex;
-  max-width: 1200px;
-  flex-wrap: wrap;
 
+
+
+.form{
+  padding:10px;
+  border-radius:10px;
 }
 

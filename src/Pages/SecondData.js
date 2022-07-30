@@ -7,18 +7,24 @@ function SecondData({name,ingredients,link,youtube,steps}) {
 
 
   return (
-    <div>
+    <div >
   
 
 
- <Card style={{ width: '30rem' }}>
-<Card.Img variant="top" src={link} />
+ <Card className="card"style={{display: 'flex',background: '#cfd9df '}}>
+<div>
+
+<container className='ratio-16x9'>
+    <iframe src={youtube} title='Youtube Video player' allowFullScreen style={{float:'centre'}}></iframe>
+    </container>
+    </div>
 <Card.Body>
   <Card.Title>{name}</Card.Title>
   <Card.Text>
-   {ingredients}
-   {steps}
+   <h5> {ingredients}</h5>
+   <strong>{steps}</strong> 
   </Card.Text>
+
 
 </Card.Body>
 </Card> 
@@ -30,4 +36,8 @@ function SecondData({name,ingredients,link,youtube,steps}) {
 }
 
 export default SecondData
+
+
+
+
 

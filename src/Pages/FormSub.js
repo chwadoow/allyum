@@ -6,7 +6,8 @@ function FormSub({addToRecipes}) {
           name:'',
           ingredients:'',
           link:'',
-          steps:''
+          steps:'',
+          youtube:''
         }
       )
   
@@ -30,10 +31,11 @@ function FormSub({addToRecipes}) {
           );
           setFormData(
             {
-          name:'',
+           name:'',
           ingredients:'',
           link:'',
-          steps:''
+          steps:'',
+          youtube:''
             }
           )
           
@@ -50,11 +52,12 @@ function FormSub({addToRecipes}) {
     
   return (
     <div>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className='form'>
     <input type="text" id='name' onChange={handleChange} value={formData.name} placeholder='enter name' required />
     <input type="text" id='ingredients' onChange={handleChange} value={formData.ingredients} placeholder='enter ingredients' required/>
     <input type="text" id='link' onChange={handleChange} value={formData.link} placeholder='enter image link'/>
     <input type='text' id='steps' onChange={handleChange} value={formData.steps} placeholder='enter steps in prose' required/>
+    <input type='text' id='youtube' onChange={handleChange} value={formData.youtube} placeholder='enter embed youtube video link' required/>
     <button type="submit">Submit</button>
   </form>
     </div>
